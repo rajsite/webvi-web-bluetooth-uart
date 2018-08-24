@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="3E76D7911BD1E61BF770AE1A6C41B6FD1A88E038EF70B555B7CA8B2FF2EBFF55FF611173505CF6C33572987A8DA6E8A51A5CD6D8F6A398010C9B49597F4E5485" Timestamp="1D43B7974F49D6B" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="2FA94E5BA4DD71EB46ECF54A935FDB2CE116727C4CAAABA7E14A17C6734749BB30FE2C4FEF94A5437C8740239C07DC08727415FF1EE64E232FD4907469D324B2" Timestamp="1D43BCAA504D7C1" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.0.51858" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.0.51858" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -41,6 +41,12 @@
 			</DataAccessor>
 			<NodeLabel AttachedTo="45" Bounds="-35 0 30 15" Id="48" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Button</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="0 0 40 15" DataItem="458" Id="459" Label="462">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="459" Bounds="-35 0 30 15" Id="462" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Button_2</p.Text>
 			</NodeLabel>
 		</DiagramUnplacedItems>
 		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" />
@@ -149,9 +155,9 @@
 				<StringBehavior TextDisplayMode="Default" />
 			</Literal>
 			<Wire Id="85" Joints="N(84:Out)|(790,190) N(83:o0)|(816,190)" xmlns="http://www.ni.com/PlatformFramework" />
-			<WhileLoop Bounds="10 290 1145 320" DiagramId="137" Id="136">
-				<LoopIteration Bounds="5 290 15 15" Id="138" />
-				<LoopCondition Bounds="1115 290 15 15" Id="139" />
+			<WhileLoop Bounds="10 290 1145 340" DiagramId="137" Id="136">
+				<LoopIteration Bounds="5 310 15 15" Id="138" />
+				<LoopCondition Bounds="1115 310 15 15" Id="139" />
 				<MethodCall Bounds="315 115 40 40" Id="116" ResolveFailedHint="Select Button And Wait For Device" Signature="@0d7015bde1014cbea73aa6f66b0921e3" Target="WebApp::Web Bluetooth UART.jsli::Select Button And Wait For Device" xmlns="http://www.ni.com/MocCommon">
 					<p.MethodDeclaration>
 						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
@@ -178,8 +184,8 @@
 				<Comment Bounds="100 60 170 55" Id="167" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
 					<p.Text>CSS Selector string found in right rail after selecting button</p.Text>
 				</Comment>
-				<CaseStructure Bounds="369 10 626 215" Default="169" Id="168" Selected="170" UserSelectorBounds="269 0 88 17">
-					<CaseStructure.Case Bounds="5 5 616 205" Id="169" Pattern="False">
+				<CaseStructure Bounds="369 10 626 235" Default="169" Id="168" Selected="170" UserSelectorBounds="269 0 88 17">
+					<CaseStructure.Case Bounds="5 5 616 225" Id="169" Pattern="False">
 						<ClusterLiteral Bounds="500 30 61 118" DataType="Error" Id="429" Label="436" p7:ControlDefinitionChecksum="e3nj023iwYRzhBkV8z61WFGSCt7pzzv3hwIJFanixR4=" xmlns:p7="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 							<p.Data>
 								<Cluster>
@@ -220,28 +226,9 @@
 						</NodeLabel>
 						<Wire Id="437" Joints="N(429:Out)|(561,35) h(5) v(100) N(410:169)|(612,135)" xmlns="http://www.ni.com/PlatformFramework" />
 					</CaseStructure.Case>
-					<CaseStructure.Case Bounds="5 5 616 205" Id="170" Pattern="True">
-						<MethodCall Bounds="291 100 40 40" Id="126" ResolveFailedHint="Send RX Message" Signature="@a8fb77ce7df844e89e96634a9a6b1086" Target="WebApp::Web Bluetooth UART.jsli::Send RX Message" xmlns="http://www.ni.com/MocCommon">
-							<p.MethodDeclaration>
-								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-									<Parameter Id="L0" Desc="rx message" />
-									<Parameter Id="L3" Desc="error in" />
-									<Parameter Id="R3" Desc="error out" />
-								</MethodDeclaration>
-							</p.MethodDeclaration>
-							<Terminal DataType="String" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
-						</MethodCall>
-						<DataAccessor Bounds="231 70 40 15" DataItem="130" Id="133" Label="134" xmlns="http://www.ni.com/MocCommon">
-							<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-						</DataAccessor>
-						<NodeLabel AttachedTo="133" Bounds="162 70 64 14" Id="134" xmlns="http://www.ni.com/PlatformFramework">
-							<p.Text>rx message</p.Text>
-						</NodeLabel>
-						<Wire Id="226" Joints="N(227:170)|(4,135) N(126:L3)|(291,135)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="135" Joints="N(133:Value)|(271,75) h(5) v(30) N(126:L0)|(291,105)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Comment Bounds="196 165 265 15" Id="231" xmlns="http://www.ni.com/MocCommon">
+					<CaseStructure.Case Bounds="5 5 616 225" Id="170" Pattern="True">
+						<Wire Id="226" Joints="N(227:170)|(4,135) N(681:o0)|(72,135)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Comment Bounds="196 185 265 15" Id="231" xmlns="http://www.ni.com/MocCommon">
 							<p.Text>might want to do this in a loop or something</p.Text>
 						</Comment>
 						<ClusterLiteral Bounds="521 70 61 118" DataType="Error" Id="413" Label="427" p7:ControlDefinitionChecksum="e3nj023iwYRzhBkV8z61WFGSCt7pzzv3hwIJFanixR4=" xmlns:p7="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
@@ -283,6 +270,53 @@
 							<p.Text>Error</p.Text>
 						</NodeLabel>
 						<Wire Id="428" Joints="N(413:Out)|(582,75) h(5) v(60) N(410:170)|(612,135)" xmlns="http://www.ni.com/PlatformFramework" />
+						<WhileLoop Bounds="76 10 395 170" DiagramId="578" Id="577">
+							<LoopIteration Bounds="5 140 15 15" Id="579" />
+							<LoopCondition Bounds="365 140 15 15" Id="580" />
+							<EventStructure Bounds="44 12 293 148" Id="463" Selected="464" UserSelectorBounds="20 0 253 17">
+								<EventStructure.EventCase Bounds="21 18 251 122" Id="464">
+									<EventStructure.EventData Bounds="0 62 92 50" HasErrorTerminals="False" Id="465" InstanceDataType="@07814112b6db49009b48126fa1eef1ff" Mode="InstanceProperties" PropertyPathsInSemanticOrder="Time,Index,Control Reference,Old Value,New Value">
+										<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+											<TypeDefinitionTarget TargetName="NI::G Core::Color Picker::Color.gtype" />
+										</p.TypeDefinitionTargets>
+										<EventPropertyItemTerminal DataType="Boolean" Hotspot="92 15" Id="c0t0v" Path="Old Value" PathElementMemberKinds="Field" Usage="Optional" />
+										<EventPropertyItemTerminal DataType="Boolean" Hotspot="92 30" Id="c1t0v" Path="New Value" PathElementMemberKinds="Field" Usage="Optional" />
+									</EventStructure.EventData>
+									<MethodCall Bounds="145 55 40 40" Id="126" ResolveFailedHint="Send RX Message" Signature="@a8fb77ce7df844e89e96634a9a6b1086" Target="WebApp::Web Bluetooth UART.jsli::Send RX Message" xmlns="http://www.ni.com/MocCommon">
+										<p.MethodDeclaration>
+											<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+												<Parameter Id="L0" Desc="rx message" />
+												<Parameter Id="L3" Desc="error in" />
+												<Parameter Id="R3" Desc="error out" />
+											</MethodDeclaration>
+										</p.MethodDeclaration>
+										<Terminal DataType="String" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+										<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+										<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+									</MethodCall>
+									<DataAccessor Bounds="85 25 40 15" DataItem="130" Id="133" Label="134" xmlns="http://www.ni.com/MocCommon">
+										<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+									</DataAccessor>
+									<NodeLabel AttachedTo="133" Bounds="16 25 64 14" Id="134" xmlns="http://www.ni.com/PlatformFramework">
+										<p.Text>rx message</p.Text>
+									</NodeLabel>
+									<Wire Id="574" Joints="N(575:464)|(2,90) N(126:L3)|(145,90)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="135" Joints="N(133:Value)|(125,30) h(5) v(30) N(126:L0)|(145,60)" xmlns="http://www.ni.com/PlatformFramework" />
+									<EventStructure.AttachedEvent EventId="{F3226E31-E688-4C58-AE1E-7ED6718409A1}" EventIndex="2" EventName="Value changed" EventSourceType="Content" EventType="@71650715ad00467c8486f4956a432615" SourceContent="460" SourceName="Button_2" />
+								</EventStructure.EventCase>
+								<EventStructure.Tunnel Bounds="-2 103 25 10" Docking="Left" Id="575" Terminals="463=680, 464=574" />
+							</EventStructure>
+							<Wire Id="680" Joints="N(681:i0)|(4,120) N(575:463)|(42,120)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Literal Bounds="345 110 25 15" DataType="Boolean" Id="683" Label="684" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>False</p.Data>
+								<BooleanBehavior />
+							</Literal>
+							<NodeLabel AttachedTo="683" Bounds="345 92 30 15" Id="684" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+								<p.Text>stop</p.Text>
+							</NodeLabel>
+							<Wire Id="685" Joints="N(683:Out)|(370,115) h(5) v(20) h(-15) v(10) N(580:Input)|(365,145)" xmlns="http://www.ni.com/PlatformFramework" />
+							<LoopTunnel Bounds="-4 120 13 10" Docking="Left" Id="681" Terminals="o0=226, i0=680" />
+						</WhileLoop>
 					</CaseStructure.Case>
 					<CaseStructure.Selector Bounds="-4 65 13 10" Docking="Left" Id="171" Terminals="168=229, 169, 170" />
 					<CaseStructure.Tunnel Bounds="-4 135 13 10" Docking="Left" Id="227" Terminals="168=128, 169, 170=226" />
@@ -300,30 +334,30 @@
 					<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 				</MethodCall>
 				<Wire Id="409" Joints="N(410:168)|(999,150) N(127:L3)|(1020,150)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Literal Bounds="1060 290 25 15" DataType="Boolean" Id="438" Label="439" xmlns="http://www.ni.com/MocCommon">
+				<Literal Bounds="1060 310 25 15" DataType="Boolean" Id="438" Label="439" xmlns="http://www.ni.com/MocCommon">
 					<p.Data>False</p.Data>
 					<BooleanBehavior />
 				</Literal>
-				<NodeLabel AttachedTo="438" Bounds="1060 272 30 15" Id="439" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="438" Bounds="1060 292 30 15" Id="439" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>stop</p.Text>
 				</NodeLabel>
-				<Wire Id="440" Joints="N(438:Out)|(1085,295) N(139:Input)|(1115,295)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wait Bounds="100 215 40 40" Id="447" />
-				<Literal Bounds="20 230 50 15" DataType="UInt32" Id="448" Label="449" xmlns="http://www.ni.com/MocCommon">
+				<Wire Id="440" Joints="N(438:Out)|(1085,315) N(139:Input)|(1115,315)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wait Bounds="100 235 40 40" Id="447" />
+				<Literal Bounds="20 250 50 15" DataType="UInt32" Id="448" Label="449" xmlns="http://www.ni.com/MocCommon">
 					<p.Data>1000</p.Data>
 					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
 				</Literal>
-				<NodeLabel AttachedTo="448" Bounds="20 212 30 15" Id="449" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="448" Bounds="20 232 30 15" Id="449" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>milliseconds to wait</p.Text>
 				</NodeLabel>
-				<Wire Id="450" Joints="N(448:Out)|(70,235) N(447:time to wait)|(100,235)" xmlns="http://www.ni.com/PlatformFramework" />
-				<DataAccessor Bounds="50 290 40 15" DataItem="451" Id="454" Label="455" xmlns="http://www.ni.com/MocCommon">
+				<Wire Id="450" Joints="N(448:Out)|(70,255) N(447:time to wait)|(100,255)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="50 310 40 15" DataItem="451" Id="454" Label="455" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="Int32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
-				<NodeLabel AttachedTo="454" Bounds="95 290 88 14" Id="455" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="454" Bounds="95 310 88 14" Id="455" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>loop iteration_3</p.Text>
 				</NodeLabel>
-				<Wire Id="456" Joints="N(138:Output)|(20,295) N(454:Value)|(53,295)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="456" Joints="N(138:Output)|(20,315) N(454:Value)|(53,315)" xmlns="http://www.ni.com/PlatformFramework" />
 			</WhileLoop>
 		</BlockDiagram>
 		<HtmlFrontPanel Height="[float]768" Id="15" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" UpdatedRootPage="[string]&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&quot;en&quot;&gt;&#xA;&#xA;    &lt;head&gt;&#xA;        &lt;script src=&quot;scripts.js&quot;&gt;&lt;/script&gt;&#xA;        &lt;meta charset=&quot;utf-8&quot;&gt;&#xA;        &lt;!---Read only section. Source panel edits to these document properties will not be persisted--&gt;&#xA;        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xA;        &lt;title&gt;Main&lt;/title&gt;&#xA;        &lt;!---End read only section. Additional scripts or document properties can be added outside this section--&gt;&#xA;        &lt;style ni-autogenerated-style-id=&quot;&quot;&gt;&#xA;            /* Read only section. Source panel edits to the content of this style tag will not be persisted */&#xA;            &#xA;            ni-front-panel[ni-control-id='FrontPanelCanvas'] {&#xA;                width: 1024px;&#xA;                height: 768px;&#xA;            }&#xA;            &#xA;            .ni-front-panel-wrapper {&#xA;                min-width: 1024px;&#xA;            }&#xA;            &#xA;            jqx-toggle-button[ni-control-id='46'] {&#xA;                left: 116px;&#xA;                top: 84px;&#xA;                width: 136px;&#xA;                height: 56px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;                --ni-foreground-color: rgba(43, 48, 51, 1);&#xA;                --ni-true-foreground-color: rgba(255, 255, 255, 1);&#xA;                --ni-false-foreground-color: rgba(43, 48, 51, 1);&#xA;            }&#xA;            &#xA;            ni-label[ni-control-id='47'] {&#xA;                --ni-foreground-color: rgba(43, 48, 51, 1);&#xA;                height: 16px;&#xA;                left: 116px;&#xA;                top: 64px;&#xA;                width: 43px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            jqx-multiline-text-box[ni-control-id='73'] {&#xA;                --ni-foreground-color: rgba(43, 48, 51, 1);&#xA;                height: 168px;&#xA;                left: 644px;&#xA;                --ni-text-align: left;&#xA;                top: 68px;&#xA;                width: 280px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            ni-label[ni-control-id='77'] {&#xA;                --ni-foreground-color: rgba(43, 48, 51, 1);&#xA;                height: 16px;&#xA;                left: 644px;&#xA;                top: 48px;&#xA;                width: 58px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            jqx-numeric-text-box[ni-control-id='97'] {&#xA;                left: 788px;&#xA;                top: 724px;&#xA;                width: 72px;&#xA;                height: 24px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;                --ni-text-align-as-flex: flex-end;&#xA;                --ni-text-align: right;&#xA;            }&#xA;            &#xA;            ni-label[ni-control-id='108'] {&#xA;                --ni-foreground-color: rgba(43, 48, 51, 1);&#xA;                height: 16px;&#xA;                left: 788px;&#xA;                top: 704px;&#xA;                width: 79px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            jqx-numeric-text-box[ni-control-id='103'] {&#xA;                left: 884px;&#xA;                top: 724px;&#xA;                width: 72px;&#xA;                height: 24px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;                --ni-text-align-as-flex: flex-end;&#xA;                --ni-text-align: right;&#xA;            }&#xA;            &#xA;            ni-label[ni-control-id='109'] {&#xA;                --ni-foreground-color: rgba(43, 48, 51, 1);&#xA;                height: 16px;&#xA;                left: 884px;&#xA;                top: 704px;&#xA;                width: 90px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            jqx-multiline-text-box[ni-control-id='111'] {&#xA;                --ni-foreground-color: rgba(43, 48, 51, 1);&#xA;                height: 168px;&#xA;                left: 644px;&#xA;                --ni-text-align: left;&#xA;                top: 276px;&#xA;                width: 280px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            &#xA;            ni-label[ni-control-id='115'] {&#xA;                --ni-foreground-color: rgba(43, 48, 51, 1);&#xA;                height: 16px;&#xA;                left: 644px;&#xA;                top: 256px;&#xA;                width: 71px;&#xA;                font-size: 12px;&#xA;                font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;&#xA;                font-style: normal;&#xA;                font-weight: normal;&#xA;                text-decoration: none;&#xA;            }&#xA;            /* End read only section. To add additional styles, add a new style tag after this one. */&#xA;        &lt;/style&gt;&#xA;&#xA;    &lt;/head&gt;&#xA;&#xA;    &lt;body&gt;&#xA;        &lt;div id=&quot;ni-outdated-browser-message&quot; style=&quot;display:none&quot;&gt;This browser is reporting compatibility with older browser technologies that may perform poorly if it all.&lt;/div&gt;&#xA;        &lt;div id=&quot;ni-failed-to-load-vireo-source&quot; style=&quot;display:none&quot;&gt;&#xA;            &lt;div id=&quot;ni-failed-to-load-vireo-message-title&quot;&gt;&#xA;                Unable to load resource file&#xA;            &lt;/div&gt;&#xA;            &lt;div id=&quot;ni-failed-to-load-vireo-message-body&quot;&gt;&#xA;                Verify all WebVI files are available and served using an HTTP server or use a browser that can load files directly from the file system. See &lt;a href=&quot;http://digital.ni.com/express.nsf/bycode/HOSTWEBAPP&quot;&gt;Hosting a Web Application on a Server&lt;/a&gt;                for more information.&#xA;            &lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;        &lt;div class=&quot;ni-front-panel-wrapper&quot; vi-ref=&quot;&quot; ni-control-id=&quot;FrontPanelWrapper&quot;&gt;&#xA;            &lt;ni-front-panel ni-control-id=&quot;FrontPanelCanvas&quot;&gt;&#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;                &#xA;&#xA;            &lt;/ni-front-panel&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/body&gt;&#xA;&#xA;&lt;/html&gt;" Width="[float]1024" xmlns="http://www.ni.com/NationalInstruments.LabVIEW.HtmlVI">
@@ -341,6 +375,8 @@
 			<HtmlLabel Height="[float]16" Id="446" LabelOwner="[UIModel]131" Left="[float]84" Text="[string]rx message" Top="[float]192" Width="[float]66" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlNumericText BaseName="[string]Numeric" Height="[float]24" Id="452" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" IsReadOnly="[bool]True" Label="[UIModel]457" Left="[float]884" MinHeight="[float]24" RadixBase="[RadixBase]Decimal" TabIndex="[int]6" Top="[float]516" Value="{DataItemBinding Id=451}" ValueFormatter="[string]Decimal, Uppercase, Signed" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<HtmlLabel Height="[float]16" Id="457" LabelOwner="[UIModel]452" Left="[float]884" Text="[string]loop iteration_3" Top="[float]496" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlButton BaseName="[string]Button" Content="[string]Button" Height="[float]28" Id="460" Label="[UIModel]461" Left="[float]132" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]7" Top="[float]372" Value="{DataItemBinding Id=458}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<HtmlLabel Height="[float]16" Id="461" LabelOwner="[UIModel]460" Left="[float]132" Text="[string]Button_2" Top="[float]352" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</HtmlFrontPanel>
 		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="44" IsLatched="True" Name="Button" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
@@ -362,6 +398,9 @@
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="451" Name="loop iteration_3" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="458" IsLatched="True" Name="Button_2" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
@@ -392,12 +431,33 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
+		<p.TypeReference TypeId="07814112b6db49009b48126fa1eef1ff">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Source" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Type" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Time" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Index" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Ref Id" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Control Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.BooleanControlBaseProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Old Value" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="New Value" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
 		<p.TypeReference TypeId="a8fb77ce7df844e89e96634a9a6b1086">
 			<Attributed AttributedType="@e0c992f97cde4e1982b8cd0ea6fec552">
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.Compiler.ParameterCallIndex" Value="[ParameterCallIndexFields]0|1|0" />
 					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
 					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="71650715ad00467c8486f4956a432615">
+			<Attributed AttributedType="@94aaef292852478383cc8f1ebeea1370">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
@@ -499,6 +559,13 @@
 				</Parameters>
 			</Function>
 		</p.TypeReference>
+		<p.TypeReference TypeId="94aaef292852478383cc8f1ebeea1370">
+			<Event Id="1" Name="Value changed" GenericTypeDefinition="Void">
+				<Parameters>
+					<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="Optional" Name="event data" DataType="@0d80f1be5cc64b89962849c008a59ac7" />
+				</Parameters>
+			</Event>
+		</p.TypeReference>
 		<p.TypeReference TypeId="c00b72e38911439caf52884fec9fa079">
 			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Close Device" ReturnType="Void" GenericTypeDefinition="Void">
 				<Parameters>
@@ -532,6 +599,16 @@
 		</p.TypeReference>
 		<p.TypeReference TypeId="c1265efe7ff2464e9348c1c0e6fcc219">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="String" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="0d80f1be5cc64b89962849c008a59ac7">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Ref Id" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Control Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.BooleanControlBaseProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Old Value" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="New Value" DataType="Boolean" />
+				</Members>
+			</Composite>
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
