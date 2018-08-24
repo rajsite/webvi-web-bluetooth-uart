@@ -1,0 +1,17 @@
+*.gcompcache
+*.niaddoncache
+*.niaddoncache-journal
+*.lvcodedb
+*.lvcompile
+*.aliases
+*.lvlps
+*.gcompcache-journal
+*.lvcompile
+*.DS_Store
+*.slicache
+*.gtypecache
+*.dllcache
+*.nipkg
+*.jslicache
+/node_modules
+*cache
