@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="2D3AFB550A1D4CD39E1B8CF01CF50EB3023B1A0145F0EADA8FB7DEA5563B51169AF5932D77443BABDC0ABA2A185C02447CC34C7C75BE98B255F351225D8386A6" Timestamp="1D43B72A8A2F481" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="67D4F6259C6D558708C824FB20605851CB2EC40770554567BAD3ECC7084014A92891BD02D4ED5FB054324EBECD04F164117636104A28B77EA463DCA5EEA335AF" Timestamp="1D43B7928C4C2DD" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.2.0.51858" FeatureSetName="JavaScript Library" Name="http://www.ni.com/JavaScriptLibrary" Version="6.0.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.2.0.51858" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -170,7 +170,7 @@
 				</JavaScriptLibraryEntryPoint>
 			</EmbeddedDefinitionReference>
 			<EmbeddedDefinitionReference Id="72" ModelDefinitionType="{http://www.ni.com/JavaScriptLibrary}JavaScriptLibraryEntryPoint" Name="Close Device">
-				<JavaScriptLibraryEntryPoint Id="73" Symbol="Function" xmlns="http://www.ni.com/JavaScriptLibrary">
+				<JavaScriptLibraryEntryPoint Id="73" Symbol="closeDevice" xmlns="http://www.ni.com/JavaScriptLibrary">
 					<Icon Id="74" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 						<IconPanel Height="[float]40" Id="75" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
 							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="76" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
